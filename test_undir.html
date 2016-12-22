@@ -636,9 +636,7 @@ yq('body').css('overflow','auto');
 	<script type="text/javascript">
 			var og_text = document.getElementById("paragraph").innerHTML;
 			function IsNumeric(input)
-			{
-				
-				
+		{
 				if (input.match(/.*=".*".*/) == null || input.match(/:.*/) == null)
 				{
 					return (input - 0) == input && (''+input).trim().length > 0;
@@ -646,10 +644,8 @@ yq('body').css('overflow','auto');
 				} else {
 					return false
 				}
-				
 				//return input.match(/\d+/)  > 0;
 			}
-
 			function submitBtn() {
 				txt = document.getElementById("paragraph").innerHTML;
 				txt_array = txt.split(" ");
@@ -660,10 +656,6 @@ yq('body').css('overflow','auto');
 				}
 				txt_array = txt_array.join(" ");
 				document.getElementById("paragraph").innerHTML = txt_array;
-			}
-			function unColor()
-			{
-				document.getElementById("paragraph").innerHTML = window.og_text
 			}
 		</script>
 </html>
